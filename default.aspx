@@ -1,4 +1,6 @@
-﻿<link href="skin/szywu3/szywu3.css" rel="stylesheet" type="text/css">
+﻿<!--作业的网址为：http://guichunyu-1.apphb.com/-->
+
+<link href="skin/szywu3/szywu3.css" rel="stylesheet" type="text/css">
 <table width="850" height="219" border="0" align="center" cellpadding="0" cellspacing="0" class="headbg">
   <tr>
     <td height="33" align="right" class="name">生活因感动而精彩，理想在创造中放飞</td>
@@ -18,7 +20,7 @@
         <td height="23" class="tiao">公告</td>
       </tr>
       <tr>
-        <td class="text">$show_placard$ </td>
+        <td class="text"></td>
       </tr>
     </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -26,7 +28,7 @@
           <td height="23" class="tiao">时间记忆</td>
         </tr>
         <tr>
-          <td class="text">$show_calendar$ </td>
+          <td class="text">待添加</td>
         </tr>
       </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -34,7 +36,7 @@
           <td height="23" class="tiao">最新日志</td>
         </tr>
         <tr>
-          <td id="text">$show_newblog$</td>
+          <td id="text">待添加</td>
         </tr>
       </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -42,7 +44,7 @@
           <td height="23" class="tiao">最新评论</td>
         </tr>
         <tr>
-          <td id="text">$show_newmessage$</td>
+          <td id="text">待添加</td>
         </tr>
       </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -50,7 +52,7 @@
           <td height="23" class="tiao">最新回复</td>
         </tr>
         <tr>
-          <td id="text">$show_comment$</td>
+          <td id="text">待添加</td>
         </tr>
       </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -58,7 +60,7 @@
           <td height="23" class="tiao">我的好友</td>
         </tr>
         <tr>
-          <td class="text">$show_links$</td>
+          <td class="text">待添加</td>
         </tr>
       </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -66,7 +68,7 @@
           <td height="23" class="tiao">我的相册</td>
         </tr>
         <tr>
-          <td class="text">$show_photo$</td>
+          <td class="text">待添加</td>
         </tr>
       </table>
       <table width="200" border="0" cellspacing="0" cellpadding="0">
@@ -74,7 +76,7 @@
           <td height="23" class="tiao">站点信息</td>
         </tr>
         <tr>
-          <td id="text">$show_info$</td>
+          <td id="text">待添加</td>
         </tr>
       </table></td>
   </tr>

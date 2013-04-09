@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AppHarbor", ".", "{A0E941B3-E18A-4353-9E0E-D99DE8FC1026}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/AppHarbor"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\xampp\htdocs\AppHarbor\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AppHarbor\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/AppHarbor"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\xampp\htdocs\AppHarbor\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\AppHarbor\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "12182"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E941B3-E18A-4353-9E0E-D99DE8FC1026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E941B3-E18A-4353-9E0E-D99DE8FC1026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
