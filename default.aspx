@@ -1,17 +1,86 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeFile="Default.aspx.cs" Inherits="_Default" %>
-
-<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-</asp:Content>
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-        Welcome to ASP.NET!
-    </h2>
-    <p>
-        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
-    </p>
-    <p>
-        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
-            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
-    </p>
-</asp:Content>
+﻿<link href="skin/szywu3/szywu3.css" rel="stylesheet" type="text/css">
+<table width="850" height="219" border="0" align="center" cellpadding="0" cellspacing="0" class="headbg">
+  <tr>
+    <td height="33" align="right" class="name">生活因感动而精彩，理想在创造中放飞</td>
+  </tr>
+  <tr>
+    <td height="138">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="dao">首页 作业</td>
+  </tr>
+</table>
+<table width="850" height="193" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#EEF8DD">
+  <tr>
+    <td width="629" valign="top"><br>&nbsp &nbsp这是cchun的博客，欢迎你的到来！</br></td>
+    <td width="221" align="center" valign="top"><table width="200" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="23" class="tiao">公告</td>
+      </tr>
+      <tr>
+        <td class="text">$show_placard$ </td>
+      </tr>
+    </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">时间记忆</td>
+        </tr>
+        <tr>
+          <td class="text">$show_calendar$ </td>
+        </tr>
+      </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">最新日志</td>
+        </tr>
+        <tr>
+          <td id="text">$show_newblog$</td>
+        </tr>
+      </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">最新评论</td>
+        </tr>
+        <tr>
+          <td id="text">$show_newmessage$</td>
+        </tr>
+      </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">最新回复</td>
+        </tr>
+        <tr>
+          <td id="text">$show_comment$</td>
+        </tr>
+      </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">我的好友</td>
+        </tr>
+        <tr>
+          <td class="text">$show_links$</td>
+        </tr>
+      </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">我的相册</td>
+        </tr>
+        <tr>
+          <td class="text">$show_photo$</td>
+        </tr>
+      </table>
+      <table width="200" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="23" class="tiao">站点信息</td>
+        </tr>
+        <tr>
+          <td id="text">$show_info$</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="850" height="126" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" class="bottombg">生活因感动而精彩,理想在创造中放飞</td>
+  </tr>
+</table>
