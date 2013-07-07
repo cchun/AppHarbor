@@ -4,7 +4,7 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1><%: Title %>.</h1>
+                
                 <h2> Web编程课程作业</h2>
             </hgroup>
              <p>
@@ -21,7 +21,7 @@
     <ol class="round">
         <li class="one">
             作业一<br /><br />
-            利用https://appharbor.com申请空间,申请了该地址(已完成)<br />
+            申请了http://guichunyu-1.apphb.com该地址(已完成)<br />
         </li>
         <li class="two">
             <a id="A5" runat="server" href="~/Account/staticPage.aspx">作业二</a><br />
@@ -47,7 +47,7 @@
         </li>
 
         <li class="six">
-             <a id="A4" runat="server" href="~/Account/Register.aspx">期末大项目</a> <br /><br />
+             <a id="A4" runat="server" href="http://guichunyu.apphb.com/">期末大项目</a> <br /><br />
            这个是大作业，但是由于apphor上面的数据库不支持读写，而我们的项目含有数据库,<br />
            所以含数据库部分没办法显示
         </li>

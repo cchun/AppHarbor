@@ -4,7 +4,7 @@
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - 我的web课程作业</title>
     <asp:PlaceHolder runat="server">      
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -39,15 +39,15 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a runat="server" href="~/">your logo here</a></p>
+                    <a runat="server" href="~/">10软工余桂淳2010052823</a></p>
             </div>
             <div class="float-right">
                 <section id="login">
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a id="registerLink" runat="server" href="~/Account/Register">注册</a></li>
+                                <li><a id="loginLink" runat="server" href="~/Account/Login">登陆</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
@@ -62,9 +62,9 @@
                 </section>
                 <nav>
                     <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/">首页</a></li>
+                        <li><a runat="server" href="~/About">关于</a></li>
+                        <li><a runat="server" href="~/Contact">联系</a></li>
                     </ul>
                 </nav>
             </div>
@@ -80,7 +80,7 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p>
-                    &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
+                    &copy; <%: DateTime.Now.Year %> - 10软工余桂淳2010052823
                 </p>
             </div>
         </div>
