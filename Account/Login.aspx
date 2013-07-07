@@ -40,20 +40,18 @@
     </script>
 
 
-    <hgroup class="title">
-        <h1><%: Title %>.</h1>
-    </hgroup>
+   
     <h2>作业3-客户端技术: 客户端进行用户名和密码的非空判断</h2>
 
     <section id="loginForm">
-        <h2>Use a local account to log in.</h2>
+        
 
         <fieldset>
-            <legend>log in form</legend>
+            <legend>登陆</legend>
 
             <ol>
                 <li>
-                    <label class="control-label" for="inputEmail">用户名</label>&nbsp;
+                    <label class="control-label" for="inputEmail">用户名</label>
                     <span class="field-validation-error" id="namehint" style="display: none">请输入用户名</span>
                     <input type="text" id="name" placeholder="Name" onblur="displayNameError()" onfocus="hideNameError()">
                     <br />

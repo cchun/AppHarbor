@@ -28,78 +28,81 @@
                     </p>
 
                     <fieldset>
-                        <legend>Registration Form</legend>
+                        <legend>用户注册</legend>
                         <ol>
                             <li>
                                 <asp:Label runat="server" AssociatedControlID="UserName">用户名</asp:Label>
                                 <asp:TextBox runat="server" ID="UserName" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
-                                    CssClass="field-validation-error" ErrorMessage="The user name field is required." />
-                            </li>
-                            <li>
-                                <asp:Label runat="server" AssociatedControlID="Email">邮箱</asp:Label>
-                                <asp:TextBox runat="server" ID="Email" TextMode="Email" />
-                                <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                                    CssClass="field-validation-error" ErrorMessage="The email address field is required." />
+                                    CssClass="field-validation-error" ErrorMessage="必须填写用户名" />
                             </li>
 
                             <li>
-                                <asp:Label ID="LabelBirthday" runat="server" >出生年份</asp:Label>
-                                <asp:TextBox ID="birthdayText" runat="server" placeholder="1991"></asp:TextBox>
+                                <asp:Label runat="server" AssociatedControlID="addressTextBox" Text="联系地址"></asp:Label>
+                                <asp:TextBox runat="server" ID="addressTextBox" />
+                                <asp:RequiredFieldValidator  runat="server" ControlToValidate="addressTextBox"
+                                    CssClass="field-validation-error" ErrorMessage="必须填写联系地址" />
+                            </li>
+
+                            <li>
+                                <asp:Label runat="server" AssociatedControlID="birthdayText">出生年份</asp:Label>
+                                <asp:TextBox ID="birthdayText" runat="server" placeholder="1990"></asp:TextBox>
                                 <asp:RangeValidator ID="RangeValidator1" MinimumValue="0"
                                      MaximumValue="2014" runat="server" ControlToValidate="birthdayText" Type="Integer" ErrorMessage="出生年份错误！" ForeColor="Red">
                                 </asp:RangeValidator>
                             </li>
 
                             <li>
-                                <asp:Label ID="Label8" runat="server" Text=" 出生月份："></asp:Label>
-                                <asp:TextBox ID="TextBox1" runat="server" placeholder="05"></asp:TextBox>
-                                <asp:RangeValidator ID="RangeValidator2" MinimumValue="01" MaximumValue="12" runat="server" ControlToValidate="TextBox1" Type="Integer">
-                        *出生月份错误！
+                                <asp:Label  runat="server" Text="出生月份" AssociatedControlID="BirthMonth"></asp:Label>
+                                <asp:TextBox ID="BirthMonth" runat="server" placeholder="11"></asp:TextBox>
+                                <asp:RangeValidator ID="RangeValidator2" MinimumValue="01" MaximumValue="12"
+                                     runat="server" ControlToValidate="BirthMonth" Type="Integer"
+                                     ErrorMessage="出生月份错误！" ForeColor="Red">
                                 </asp:RangeValidator>
                             </li>
                             <li>
-                                <asp:Label ID="Label9" runat="server" Text=" 出生日期："></asp:Label>
-                                <asp:TextBox ID="TextBox2" runat="server" placeholder="24"></asp:TextBox>
-                                <asp:RangeValidator ID="RangeValidator3" MinimumValue="1" MaximumValue="31" runat="server" ControlToValidate="TextBox2" Type="Integer">
-                        *出生日期错误！
-                                </asp:RangeValidator>
+                                <asp:Label  runat="server" Text="出生日期" AssociatedControlID="BirthDay"></asp:Label>
+                                <asp:TextBox ID="BirthDay" runat="server" placeholder="21"></asp:TextBox>
+                                <asp:RangeValidator ID="RangeValidator3" MinimumValue="1" MaximumValue="31"
+                                     runat="server" ControlToValidate="BirthDay" Type="Integer"
+                                     ErrorMessage="出生日期错误！" ForeColor="red" />
                             </li>
-                             <li>
-                                <asp:Label ID="Label5" runat="server" Text=" 电子邮件："></asp:Label>
-                                <asp:TextBox ID="TextBox3" runat="server" placeholder="jiangliwu.ipple@gmail.com"></asp:TextBox>
-
-                                <asp:RegularExpressionValidator ID="v2" ControlToValidate="email" runat="server" ValidationExpression="^\s*([A-Za-z0-9_-]+(\.\w+)*@([\w-]+\.)+\w{2,3})\s*$">
-                        *邮件地址格式错误！
+                            <li>
+                                <asp:Label ID="Label3" runat="server" AssociatedControlID="Email" Text="电子邮箱"></asp:Label>
+                                <asp:TextBox runat="server" ID="Email" TextMode="Email" placeholder="guichyu@gmail.com" />
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" ControlToValidate="Email" runat="server"
+                                    ValidationExpression="^\s*([A-Za-z0-9_-]+(\.\w+)*@([\w-]+\.)+\w{2,3})\s*$"
+                                    ErrorMessage="邮件地址格式错误！" ForeColor="red">
                                 </asp:RegularExpressionValidator>
                             </li>
                              <li>
-                                <asp:Label ID="Label4" runat="server" AssociatedControlID="PostNum">邮政编码</asp:Label>
-                                <asp:TextBox runat="server" ID="PostNum"></asp:TextBox>
+                                <asp:Label runat="server" AssociatedControlID="PostNum">邮政编码</asp:Label>
+                                <asp:TextBox runat="server" ID="PostNum" placeholder="519000"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="PostNum" Display="Dynamic"
                                      ErrorMessage="格式错误(6位数字)" ForeColor="Red" ValidationExpression="\d{6}"></asp:RegularExpressionValidator>
                             </li>
-                            <li>
-                                <asp:Label ID="Label3" runat="server" AssociatedControlID="PhoneNum">联系电话</asp:Label>
-                                <asp:TextBox runat="server" ID="PhoneNum"></asp:TextBox>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="PhoneNum" Display="Dynamic"
-                                    ErrorMessage="格式错误(3位数字区号横杠8位电话号码)" ForeColor="Red" ValidationExpression="(\(\d{3}\)|\d{3}-)?\d{8}"></asp:RegularExpressionValidator>
-                            </li>
-                           
 
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="Password">Password</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="PhoneNum">联系电话</asp:Label>
+                                <asp:TextBox runat="server" ID="PhoneNum" placeholder="021-12345678"></asp:TextBox>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="PhoneNum" Display="Dynamic"
+                                    ErrorMessage="格式错误,格式应满足(021)12345678或021-12345678" ForeColor="Red" ValidationExpression="(\(\d{3}\)|\d{3}-)?\d{8}"></asp:RegularExpressionValidator>
+                            </li>
+                           
+                            <li>
+                                <asp:Label runat="server" AssociatedControlID="Password">密码</asp:Label>
                                 <asp:TextBox runat="server" ID="Password" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                                    CssClass="field-validation-error" ErrorMessage="The password field is required." />
+                                    CssClass="field-validation-error" ErrorMessage="必须填写该密码" />
                             </li>
+
                             <li>
-                                <asp:Label runat="server" AssociatedControlID="ConfirmPassword">Confirm password</asp:Label>
+                                <asp:Label runat="server" AssociatedControlID="ConfirmPassword">确认密码</asp:Label>
                                 <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" />
                                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
-                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The confirm password field is required." />
+                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="必须填写确认密码项" />
                                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
-                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+                                     CssClass="field-validation-error" Display="Dynamic" ErrorMessage="" />
                             </li>
                         </ol>
                         <asp:Button runat="server" CommandName="MoveNext" Text="Register" />
