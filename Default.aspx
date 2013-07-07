@@ -48,8 +48,9 @@
 
         <li class="six">
              <a id="A4" runat="server" href="http://guichunyu.apphb.com/">期末大项目</a> <br /><br />
+           我们是C2组，做的是课后讨论室,小组成员是:余桂淳,蒋利武<br />
            这个是大作业，但是由于apphor上面的数据库不支持读写，而我们的项目含有数据库,<br />
-           所以含数据库部分没办法显示
+           所以含数据库部分没办法显示,故将项目代码与项目的截图发给老师qq邮箱17503032@qq.com<br />
         </li>
     </ol>
 </asp:Content>
